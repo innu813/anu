@@ -1,0 +1,9 @@
+FROM centos
+MAINTAINER saidulu
+ENTRYPOINT ["echo" , "hello"]
+
+FROM ubuntu
+MAINTAINER saidulu
+RUN apt-get update
+CMD ["echo", "hello world.."]
+
